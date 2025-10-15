@@ -1,1 +1,92 @@
-Obito Uchiha
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obito Uchiha — Character Portfolio</title>
+  <meta name="description" content="A fan-made character portfolio for Obito Uchiha, featuring biography, abilities, timeline, quotes, and gallery." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌀</text></svg>">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-mark">🌀</span>
+      <span class="logo-text">Obito Uchiha</span>
+    </div>
+    <nav aria-label="Primary">
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">☰</button>
+      <ul id="primaryNav" class="nav-list">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#abilities">Abilities</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#relationships">Relationships</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" role="banner">
+      <div class="hero-inner">
+        <h1>Obito Uchiha</h1>
+        <p class="subtitle">“Between light and shadow.”</p>
+        <div class="tags">
+          <span class="tag">Uchiha Clan</span>
+          <span class="tag">Akatsuki</span>
+          <span class="tag">Masked Man</span>
+        </div>
+      </div>
+      <img class="hero-image" src="assets/images/obito-mask.svg" alt="Stylized mask illustration" />
+    </section>
+
+    <section id="overview" class="section">
+      <h2>Character Overview</h2>
+      <p class="lead">
+        A complex, tragic shinobi whose journey spans idealism, despair, and redemption. This portfolio curates his
+        backstory, powers, and arc in a clean, data-driven layout for fans and creators.
+      </p>
+
+      <div class="info-grid" id="basicInfo" aria-live="polite"></div>
+    </section>
+
+    <section id="abilities" class="section">
+      <h2>Abilities & Powers</h2>
+      <ul class="card-list" id="abilitiesList" aria-live="polite"></ul>
+    </section>
+
+    <section id="timeline" class="section">
+      <h2>Arc Timeline</h2>
+      <ol class="timeline" id="timelineList" aria-live="polite"></ol>
+    </section>
+
+    <section id="relationships" class="section">
+      <h2>Major Relationships</h2>
+      <div class="rel-grid" id="relationshipsGrid" aria-live="polite"></div>
+    </section>
+
+    <section id="quotes" class="section">
+      <h2>Quote Highlights</h2>
+      <div class="quotes" id="quotesWrap" aria-live="polite"></div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <p class="muted">Click a card to view in a lightbox.</p>
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Fan-made portfolio for educational/fair-use purposes. Built with HTML, CSS, and JavaScript.
+    </p>
+    <a href="README.md" class="readme-link">Readme</a>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
